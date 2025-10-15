@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — InspireBlog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-blog">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">InspireBlog</a>
+      <button class="nav-toggle" id="navToggleBlog" aria-expanded="false" aria-controls="primaryNavBlog">
+        <span class="sr-only">Toggle navigation</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="primaryNavBlog" class="primary-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container content">
+    <h1>All posts</h1>
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search posts..." aria-label="Search posts">
+      <select id="category" aria-label="Filter by category">
+        <option value="all">All categories</option>
+      </select>
+    </div>
+    <div id="posts" class="posts-grid" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 InspireBlog</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

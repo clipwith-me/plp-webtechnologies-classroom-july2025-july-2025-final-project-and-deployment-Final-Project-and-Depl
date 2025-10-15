@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InspireBlog — Home</title>
+  <meta name="description" content="InspireBlog — stories, tutorials, and motivation for creators." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">InspireBlog</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Toggle navigation</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Ideas that move you to act.</h1>
+          <p class="lead">Curated stories, practical guides, and motivation for creators, builders, and lifelong learners.</p>
+          <p>
+            <a class="btn primary" href="blog.html">Explore Articles</a>
+            <a class="btn ghost" href="#featured">Featured</a>
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="card spotlight">✨
+            <h3>Featured: Growth Mindset</h3>
+            <p>Short reads to help you shift perspectives and ship more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="container featured">
+      <h2 class="section-title">Featured articles</h2>
+      <div id="featuredPosts" class="posts-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 InspireBlog — Crafted with care.</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
